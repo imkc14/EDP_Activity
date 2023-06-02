@@ -276,7 +276,7 @@ Partial Class Form2
         residents_tab.Name = "residents_tab"
         residents_tab.Size = New Size(374, 51)
         residents_tab.TabIndex = 11
-        residents_tab.Text = "                    Residents Record"
+        residents_tab.Text = "                    Resident Records"
         residents_tab.TextAlign = ContentAlignment.MiddleLeft
         residents_tab.UseVisualStyleBackColor = False
         ' 

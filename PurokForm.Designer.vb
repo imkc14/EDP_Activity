@@ -22,9 +22,9 @@ Partial Class PurokForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label8 = New Label()
         Panel1 = New Panel()
         PictureBox7 = New PictureBox()
@@ -327,7 +327,7 @@ Partial Class PurokForm
         residents_tab.Name = "residents_tab"
         residents_tab.Size = New Size(374, 51)
         residents_tab.TabIndex = 11
-        residents_tab.Text = "                    Residents Record"
+        residents_tab.Text = "                    Resident Records"
         residents_tab.TextAlign = ContentAlignment.MiddleLeft
         residents_tab.UseVisualStyleBackColor = False
         ' 
@@ -414,14 +414,14 @@ Partial Class PurokForm
         ' dgPurok
         ' 
         dgPurok.BackgroundColor = Color.WhiteSmoke
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = SystemColors.Control
-        DataGridViewCellStyle4.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
-        dgPurok.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = SystemColors.Control
+        DataGridViewCellStyle1.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
+        dgPurok.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         dgPurok.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgPurok.Columns.AddRange(New DataGridViewColumn() {purokID, purok_name, population})
         dgPurok.Location = New Point(392, 141)
@@ -1182,19 +1182,19 @@ Partial Class PurokForm
         ' 
         ' dgPurokLeaders
         ' 
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dgPurokLeaders.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgPurokLeaders.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
         dgPurokLeaders.BackgroundColor = Color.WhiteSmoke
         dgPurokLeaders.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgPurokLeaders.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, purok_leader})
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = SystemColors.Window
-        DataGridViewCellStyle6.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.True
-        dgPurokLeaders.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = SystemColors.Window
+        DataGridViewCellStyle3.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.True
+        dgPurokLeaders.DefaultCellStyle = DataGridViewCellStyle3
         dgPurokLeaders.GridColor = SystemColors.Control
         dgPurokLeaders.Location = New Point(392, 500)
         dgPurokLeaders.Name = "dgPurokLeaders"

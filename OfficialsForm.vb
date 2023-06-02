@@ -242,4 +242,8 @@ Public Class OfficialsForm
         Form1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub exportOfficials_Click(sender As Object, e As EventArgs) Handles exportOfficials.Click
+        Call exportToExcel(Me.dgBrgyOfficials, "officials_list.xlsx")
+    End Sub
 End Class

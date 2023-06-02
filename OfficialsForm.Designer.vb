@@ -127,6 +127,7 @@ Partial Class OfficialsForm
         start_term = New DateTimePicker()
         end_term = New DateTimePicker()
         OpenFileDialog1 = New OpenFileDialog()
+        exportOfficials = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
@@ -327,7 +328,7 @@ Partial Class OfficialsForm
         residents_tab.Name = "residents_tab"
         residents_tab.Size = New Size(374, 51)
         residents_tab.TabIndex = 11
-        residents_tab.Text = "                    Residents Record"
+        residents_tab.Text = "                    Resident Records"
         residents_tab.TextAlign = ContentAlignment.MiddleLeft
         residents_tab.UseVisualStyleBackColor = False
         ' 
@@ -1234,12 +1235,27 @@ Partial Class OfficialsForm
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' exportOfficials
+        ' 
+        exportOfficials.BackColor = Color.FromArgb(CByte(255), CByte(173), CByte(52))
+        exportOfficials.FlatAppearance.BorderSize = 0
+        exportOfficials.FlatStyle = FlatStyle.Popup
+        exportOfficials.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        exportOfficials.ForeColor = Color.Black
+        exportOfficials.Location = New Point(572, 686)
+        exportOfficials.Name = "exportOfficials"
+        exportOfficials.Size = New Size(101, 23)
+        exportOfficials.TabIndex = 70
+        exportOfficials.Text = "Print"
+        exportOfficials.UseVisualStyleBackColor = False
+        ' 
         ' OfficialsForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1364, 721)
+        Controls.Add(exportOfficials)
         Controls.Add(end_term)
         Controls.Add(start_term)
         Controls.Add(Label16)
@@ -1453,4 +1469,5 @@ Partial Class OfficialsForm
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox17 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents exportOfficials As Button
 End Class

@@ -26,6 +26,18 @@ Partial Class ResidentsForm
         search_box = New TextBox()
         importdata = New Button()
         dgResidents = New DataGridView()
+        resident_id = New DataGridViewTextBoxColumn()
+        purokno = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
+        Middlename = New DataGridViewTextBoxColumn()
+        Firstname = New DataGridViewTextBoxColumn()
+        Birthdate = New DataGridViewTextBoxColumn()
+        Age = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
+        Religion = New DataGridViewTextBoxColumn()
+        Sex = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
+        Voter = New DataGridViewTextBoxColumn()
         Panel1 = New Panel()
         PictureBox7 = New PictureBox()
         PictureBox5 = New PictureBox()
@@ -75,18 +87,6 @@ Partial Class ResidentsForm
         birthday = New DateTimePicker()
         Lastname = New DataGridViewTextBoxColumn()
         Label15 = New Label()
-        resident_id = New DataGridViewTextBoxColumn()
-        purokno = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
-        Middlename = New DataGridViewTextBoxColumn()
-        Firstname = New DataGridViewTextBoxColumn()
-        Birthdate = New DataGridViewTextBoxColumn()
-        Age = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
-        Religion = New DataGridViewTextBoxColumn()
-        Sex = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
-        Voter = New DataGridViewTextBoxColumn()
         CType(dgResidents, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
@@ -144,6 +144,75 @@ Partial Class ResidentsForm
         dgResidents.RowTemplate.Height = 29
         dgResidents.Size = New Size(987, 303)
         dgResidents.TabIndex = 0
+        ' 
+        ' resident_id
+        ' 
+        resident_id.HeaderText = "Resident ID"
+        resident_id.Name = "resident_id"
+        resident_id.ReadOnly = True
+        ' 
+        ' purokno
+        ' 
+        purokno.HeaderText = "Purok"
+        purokno.Name = "purokno"
+        ' 
+        ' DataGridViewTextBoxColumn1
+        ' 
+        DataGridViewTextBoxColumn1.HeaderText = "Last Name"
+        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        DataGridViewTextBoxColumn1.ReadOnly = True
+        ' 
+        ' Middlename
+        ' 
+        Middlename.HeaderText = "Middle Name"
+        Middlename.Name = "Middlename"
+        Middlename.ReadOnly = True
+        ' 
+        ' Firstname
+        ' 
+        Firstname.HeaderText = "First Name"
+        Firstname.Name = "Firstname"
+        Firstname.ReadOnly = True
+        ' 
+        ' Birthdate
+        ' 
+        Birthdate.HeaderText = "Birthdate"
+        Birthdate.Name = "Birthdate"
+        Birthdate.ReadOnly = True
+        ' 
+        ' Age
+        ' 
+        Age.HeaderText = "Age"
+        Age.Name = "Age"
+        Age.ReadOnly = True
+        ' 
+        ' DataGridViewTextBoxColumn2
+        ' 
+        DataGridViewTextBoxColumn2.HeaderText = "Civil Status"
+        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        DataGridViewTextBoxColumn2.ReadOnly = True
+        ' 
+        ' Religion
+        ' 
+        Religion.HeaderText = "Religion"
+        Religion.Name = "Religion"
+        ' 
+        ' Sex
+        ' 
+        Sex.HeaderText = "Sex"
+        Sex.Name = "Sex"
+        ' 
+        ' DataGridViewTextBoxColumn3
+        ' 
+        DataGridViewTextBoxColumn3.HeaderText = "Address"
+        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        DataGridViewTextBoxColumn3.ReadOnly = True
+        ' 
+        ' Voter
+        ' 
+        Voter.HeaderText = "Voter Status"
+        Voter.Name = "Voter"
+        Voter.ReadOnly = True
         ' 
         ' Panel1
         ' 
@@ -303,7 +372,7 @@ Partial Class ResidentsForm
         residents_tab.Name = "residents_tab"
         residents_tab.Size = New Size(374, 51)
         residents_tab.TabIndex = 11
-        residents_tab.Text = "                    Residents Record"
+        residents_tab.Text = "                    Resident Records"
         residents_tab.TextAlign = ContentAlignment.MiddleLeft
         residents_tab.UseVisualStyleBackColor = False
         ' 
@@ -440,7 +509,7 @@ Partial Class ResidentsForm
         Button3.Name = "Button3"
         Button3.Size = New Size(117, 23)
         Button3.TabIndex = 37
-        Button3.Text = "Export Data"
+        Button3.Text = "Print"
         Button3.UseVisualStyleBackColor = False
         ' 
         ' sex_box
@@ -714,75 +783,6 @@ Partial Class ResidentsForm
         Label15.Size = New Size(48, 16)
         Label15.TabIndex = 71
         Label15.Text = "Search"
-        ' 
-        ' resident_id
-        ' 
-        resident_id.HeaderText = "Resident ID"
-        resident_id.Name = "resident_id"
-        resident_id.ReadOnly = True
-        ' 
-        ' purokno
-        ' 
-        purokno.HeaderText = "Purok"
-        purokno.Name = "purokno"
-        ' 
-        ' DataGridViewTextBoxColumn1
-        ' 
-        DataGridViewTextBoxColumn1.HeaderText = "Last Name"
-        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        DataGridViewTextBoxColumn1.ReadOnly = True
-        ' 
-        ' Middlename
-        ' 
-        Middlename.HeaderText = "Middle Name"
-        Middlename.Name = "Middlename"
-        Middlename.ReadOnly = True
-        ' 
-        ' Firstname
-        ' 
-        Firstname.HeaderText = "First Name"
-        Firstname.Name = "Firstname"
-        Firstname.ReadOnly = True
-        ' 
-        ' Birthdate
-        ' 
-        Birthdate.HeaderText = "Birthdate"
-        Birthdate.Name = "Birthdate"
-        Birthdate.ReadOnly = True
-        ' 
-        ' Age
-        ' 
-        Age.HeaderText = "Age"
-        Age.Name = "Age"
-        Age.ReadOnly = True
-        ' 
-        ' DataGridViewTextBoxColumn2
-        ' 
-        DataGridViewTextBoxColumn2.HeaderText = "Civil Status"
-        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        DataGridViewTextBoxColumn2.ReadOnly = True
-        ' 
-        ' Religion
-        ' 
-        Religion.HeaderText = "Religion"
-        Religion.Name = "Religion"
-        ' 
-        ' Sex
-        ' 
-        Sex.HeaderText = "Sex"
-        Sex.Name = "Sex"
-        ' 
-        ' DataGridViewTextBoxColumn3
-        ' 
-        DataGridViewTextBoxColumn3.HeaderText = "Address"
-        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        DataGridViewTextBoxColumn3.ReadOnly = True
-        ' 
-        ' Voter
-        ' 
-        Voter.HeaderText = "Voter Status"
-        Voter.Name = "Voter"
-        Voter.ReadOnly = True
         ' 
         ' ResidentsForm
         ' 
